@@ -14,16 +14,20 @@ object ClfAnalyzerDriver {
   private  val logger = Logger.getLogger("com.clfanalyzer.driver")
 
   def main(args: Array[String]): Unit = {
-    //val dataUrl = args(0)
-    //val topN = args(1).toInt
-    val topN = 10
+    var dataSource = "ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz"
+    var topN = 10
+    if (args.length == 2){
+      dataSource = args(0)
+      topN = args(1).toInt
+    } else {
+      logger.info("No arguments entered. Using defaults")
+    }
+
     // Create spark session. Currently assumes local spark.
-    // TODO: Make configurable
     val spark: SparkSession = SparkSession.builder.master("local").appName("webscraper").getOrCreate
     val sc = spark.sparkContext
     import spark.implicits._
 
-    val dataSource = "ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz"
     // Not a sftp so we can use the spark library to download and read the compressed file
     sc.addFile(dataSource)
     val fileName = SparkFiles.get(dataSource.split("/").last)
@@ -43,22 +47,19 @@ object ClfAnalyzerDriver {
     logsDsRepartition.cache()
 
     /*
-    "uses Apache Spark to determine the top-n most frequent visitors and urls for each day of the trace. "
-    Does this mean most frequent visitors and most frequent url's they went to or
-    most frequent visitors and most frequent urls visited per day
+    "determine the top-n most frequent visitors and urls for each day of the trace."
      */
-
-    //val topN = 10
     val analyzer = new Analyzer
 
-    // This will get the rank of any columns ingested as well.
-    // It would be preferred if columns were set via property and defaulted to "url" and "visitorhost"
+    // This will calculate the rank of any columns that are not 'time' as well.
+    // In future iterations it would be preferred if columns were set via property and defaulted to "url" and "visitorhost"
     val sDs = analyzer.topNAnalyzer(logsDsRepartition, topN)
 
+    // Save the calculated rank dataframe. We avoid using coalesce at all costs as it pulls all data onto one now.
+    // This may not be an issue with small data sets but it will not scale
     sDs.write.mode(SaveMode.Overwrite).csv("./src/main/resources/output.csv")
-    sDs.show(100,false)
+    sDs.show(30,false)
 
   }
-
 
 }

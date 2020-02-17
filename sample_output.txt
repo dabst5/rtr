@@ -1,0 +1,35 @@
++----------+---------+--------------------+--------------------+-----------------------------------------------+------------+
+|time      |denserank|visitorhost         |hitstotalvisitorhost|url                                            |hitstotalurl|
++----------+---------+--------------------+--------------------+-----------------------------------------------+------------+
+|1995-07-01|1        |piweba3y.prodigy.com|623                 |/images/NASA-logosmall.gif                     |3977        |
+|1995-07-01|2        |piweba4y.prodigy.com|547                 |/images/KSC-logosmall.gif                      |3530        |
+|1995-07-01|3        |alyssa.prodigy.com  |536                 |/shuttle/countdown/count.gif                   |2690        |
+|1995-07-01|4        |disarray.demon.co.uk|463                 |/shuttle/countdown/                            |2654        |
+|1995-07-01|5        |piweba1y.prodigy.com|456                 |/shuttle/missions/sts-71/sts-71-patch-small.gif|1632        |
+|1995-07-01|6        |www-b6.proxy.aol.com|417                 |/images/MOSAIC-logosmall.gif                   |1551        |
+|1995-07-01|7        |burger.letters.com  |350                 |/images/USA-logosmall.gif                      |1538        |
+|1995-07-01|8        |poppy.hensa.ac.uk   |300                 |/images/ksclogo-medium.gif                     |1535        |
+|1995-07-01|9        |www-b5.proxy.aol.com|279                 |/images/WORLD-logosmall.gif                    |1507        |
+|1995-07-01|10       |131.182.28.171      |278                 |/shuttle/missions/sts-71/images/images.html    |1460        |
+|1995-07-02|1        |piweba3y.prodigy.com|960                 |/images/NASA-logosmall.gif                     |3416        |
+|1995-07-02|2        |alyssa.prodigy.com  |578                 |/images/KSC-logosmall.gif                      |3099        |
+|1995-07-02|3        |piweba1y.prodigy.com|432                 |/shuttle/countdown/count.gif                   |2305        |
+|1995-07-02|4        |disarray.demon.co.uk|366                 |/shuttle/countdown/                            |2285        |
+|1995-07-02|5        |www-d4.proxy.aol.com|343                 |/shuttle/missions/sts-71/sts-71-patch-small.gif|1451        |
+|1995-07-02|6        |www-b6.proxy.aol.com|329                 |/images/ksclogo-medium.gif                     |1338        |
+|1995-07-02|7        |www-b2.proxy.aol.com|260                 |/images/MOSAIC-logosmall.gif                   |1335        |
+|1995-07-02|8        |www-d1.proxy.aol.com|224                 |/images/USA-logosmall.gif                      |1334        |
+|1995-07-02|9        |mica.saglac.qc.ca   |220                 |/images/WORLD-logosmall.gif                    |1296        |
+|1995-07-02|9        |www-d3.proxy.aol.com|220                 |/images/WORLD-logosmall.gif                    |1296        |
+|1995-07-02|10       |bairdsun1.gatech.edu|204                 |/shuttle/missions/sts-71/images/images.html    |1281        |
+|1995-07-03|1        |piweba3y.prodigy.com|1067                |/images/NASA-logosmall.gif                     |5573        |
+|1995-07-03|2        |134.83.184.18       |413                 |/images/KSC-logosmall.gif                      |4655        |
+|1995-07-03|3        |alyssa.prodigy.com  |368                 |/shuttle/countdown/count.gif                   |3666        |
+|1995-07-03|4        |news.ti.com         |340                 |/shuttle/countdown/                            |3534        |
+|1995-07-03|5        |www-b6.proxy.aol.com|311                 |/images/ksclogo-medium.gif                     |2296        |
+|1995-07-03|6        |piweba1y.prodigy.com|279                 |/images/MOSAIC-logosmall.gif                   |2235        |
+|1995-07-03|7        |gatekeeper.mitre.org|265                 |/images/USA-logosmall.gif                      |2225        |
+|1995-07-03|8        |igate.uswest.com    |250                 |/images/WORLD-logosmall.gif                    |2175        |
+|1995-07-03|9        |disarray.demon.co.uk|243                 |/shuttle/missions/sts-71/sts-71-patch-small.gif|1927        |
++----------+---------+--------------------+--------------------+-----------------------------------------------+------------+
+only showing top 30 rows

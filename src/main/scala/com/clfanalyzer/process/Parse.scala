@@ -8,15 +8,19 @@ class Parse extends Serializable {
   /*
  CLF is standardized and simple enough to parse using a regular expression.
  Is it cleaner to extract using df.regexp_extract? Maybe but validation of fields/lines is front loaded and initial validation is easier this way.
+ As the business requirement only cares about 3 segments of the log, we only look for and capture those 3 segments.
   */
   val PATTERN = "^(\\S+) \\S+ \\S+ \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"\\S+\\s?(.+?(?=\\s+HTTP|\"))".r
 
   /*
   The downloaded file is using Apache Common LogFile (CLF) format.
   I found some scala libraries that parse this format but they all appear to be unmaintained (lack commits within the past 2 years).
-  I prefer not to recreate the wheel but this being the case, it will be less of a maintenance nightmare to roll my own version.
+  I prefer not to recreate the wheel, but this being the case, it will be less of a maintenance nightmare to roll my own version.
   I could also use an option here. The code would look more concise but it can be more confusing for Java users to read, hence sticking to try/catch.
-  Because we have a specific use case we can capture all necessary data in threw regex groups.
+  Because we have a specific use case we can capture all necessary data in regex groups.
+
+  We also avoid using a UDF, which could be a more resource intensive.
+
   */
   def parseCLF(clfLog: String): clfLogRecord = {
 
@@ -37,7 +41,7 @@ class Parse extends Serializable {
 
       if (res.isEmpty) {
         println("Rejected Log Line: " + clfLog)
-        Files.write(Paths.get("/Users/Dasani/Desktop/empty.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
+        //Files.write(Paths.get("./empty.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
         clfLogRecord("Empty", "-", "-")
       }
       else {
@@ -46,14 +50,13 @@ class Parse extends Serializable {
         val visitorHost = m.group(1)
         val time = toTimestamp(m.group(2).dropRight(7))
         val url = m.group(3)
-        //println("Accepted Log Line [else]: " + clfLog)
         clfLogRecord(visitorHost, time, url)
 
       }
     } catch
       {
         case e: Exception =>
-          Files.write(Paths.get("/Users/Dasani/Desktop/error.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
+          //Files.write(Paths.get("./error.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
 
           println("Exception on line: " + clfLog + " : " + e.printStackTrace());
           clfLogRecord("Empty", "", "")

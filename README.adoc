@@ -13,16 +13,44 @@ Requirements
     * Docker 2.2.0 or higher
     * Java 1.8.0_40+
 
+Description
+-----------
+This program looks for a file (data source) and integer (top N to rank) as arguments.
+If none are supplied ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz and 10 are set as defaults.
 
+The output files are stored in the following directory
+[source,bash]
+ ./src/main/resources/output.csv
+
+Assumption
+----------
+It is assumed that Spark will be run locally as app name "webscraper"
+It is assumed the output directory will be
+[source,bash]
+ ./src/main/resources/output.csv
+and we do not need the output in a particular format
+It is assumed finding 'topN' is greedy and we therefore account for tied ranking
 Building
 --------
 To build the application run:
 
 [source,bash]
-mvn clean install
+$ mvn clean install
 
 === Get Started
 
+From project top level directory
+
 [source,bash]
-----
 $ ./src/main/resources/runit.sh
+
+=== Interesting Findings
+It is possible for tied ranks but we are asked to find N ranks.
+    e.g. from where topN = 10
+-----
+        |1995-07-02|9        |mica.saglac.qc.ca   |220                 |/images/WORLD-logosmall.gif                    |1296        |
+        |1995-07-02|9        |www-d3.proxy.aol.com|220                 |/images/WORLD-logosmall.gif                    |1296        |
+        |1995-07-02|10       |bairdsun1.gatech.edu|204                 |/shuttle/missions/sts-71/images/images.html    |1281        |
+-----
+By looking at the data (or running a count on a known vistorhost/day) we can see that both visitorhosts visited the same number of times on this day
+but the 9th most accessed url remained '/images/WORLD-logosmall.gif'
