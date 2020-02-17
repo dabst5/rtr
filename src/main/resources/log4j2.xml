@@ -1,0 +1,34 @@
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="log-path">./logs</Property>
+        <Property name="archive">${log-path}/archive</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>>
+            </PatternLayout>
+        </Console>
+        <File name="File-Appender1" fileName="${log-path}/ClfAnalyzer.log" >
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.clfanalyzer.driver" level="debug" additivity="false">
+            <AppenderRef ref="File-Appender1"/>
+        </Logger>
+        <Logger name="com.clfanalyzer.process" level="debug" additivity="false">
+            <AppenderRef ref="File-Appender1"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>
+

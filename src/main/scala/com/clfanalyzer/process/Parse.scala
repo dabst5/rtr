@@ -1,10 +1,10 @@
 package com.clfanalyzer.process
 
-import java.nio.charset.StandardCharsets
-import java.nio.file.{Files, Paths, StandardOpenOption}
+import org.apache.log4j.Logger
 
 class Parse extends Serializable {
 
+  private  val logger = Logger.getLogger("com.clfanalyzer.process")
   /*
  CLF is standardized and simple enough to parse using a regular expression.
  Is it cleaner to extract using df.regexp_extract? Maybe but validation of fields/lines is front loaded and initial validation is easier this way.
@@ -41,6 +41,7 @@ class Parse extends Serializable {
 
       if (res.isEmpty) {
         println("Rejected Log Line: " + clfLog)
+        logger.debug("Rejected Log Line: " + clfLog)
         //Files.write(Paths.get("./empty.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
         clfLogRecord("Empty", "-", "-")
       }
@@ -57,7 +58,7 @@ class Parse extends Serializable {
       {
         case e: Exception =>
           //Files.write(Paths.get("./error.log"), clfLog.concat("\n").getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
-
+          logger.error("Exception on line: " + clfLog + " : " + e.printStackTrace())
           println("Exception on line: " + clfLog + " : " + e.printStackTrace());
           clfLogRecord("Empty", "", "")
       }

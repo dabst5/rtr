@@ -17,6 +17,10 @@ class TestProcess {
     val inputData = Files.readAllLines(Paths.get(System.getProperty("user.dir") + "/src/test/resources/test_data.txt"))
 
     val parser = new Parse
-
+    /*
+    TODO:
+      Take input data from test/scala/resources
+      verify parser outputs the correct number of lines - known 'error lines'
+     */
   }
 }
