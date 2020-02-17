@@ -28,8 +28,10 @@ It is assumed that Spark will be run locally as app name "webscraper"
 It is assumed the output directory will be
 [source,bash]
  ./src/main/resources/output.csv
-and we do not need the output in a particular format
+
+It is assumed we do not need the output in a particular format
 It is assumed finding 'topN' is greedy and we therefore account for tied ranking
+
 Building
 --------
 To build the application run:
@@ -48,6 +50,9 @@ $ ./src/main/resources/runit.sh
 It is possible for tied ranks but we are asked to find N ranks.
     e.g. from where topN = 10
 -----
+        +----------+---------+--------------------+--------------------+-----------------------------------------------+------------+
+        |time      |denserank|visitorhost         |hitstotalvisitorhost|url                                            |hitstotalurl|
+        +----------+---------+--------------------+--------------------+-----------------------------------------------+------------+
         |1995-07-02|9        |mica.saglac.qc.ca   |220                 |/images/WORLD-logosmall.gif                    |1296        |
         |1995-07-02|9        |www-d3.proxy.aol.com|220                 |/images/WORLD-logosmall.gif                    |1296        |
         |1995-07-02|10       |bairdsun1.gatech.edu|204                 |/shuttle/missions/sts-71/images/images.html    |1281        |
