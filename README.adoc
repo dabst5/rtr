@@ -1,0 +1,28 @@
+Apache Common Log Format Analyzer
+================================
+
+Business Problem
+-----------------
+Write a program in Scala that downloads the dataset at ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz and uses Apache Spark to determine the top-n most frequent visitors and urls for each day of the trace.  
+Package the application in a docker container.
+
+Requirements
+------------
+
+    * Maven 3 or higher
+    * Docker 2.2.0 or higher
+    * Java 1.8.0_40+
+
+
+Building
+--------
+To build the application run:
+
+[source,bash]
+mvn clean install
+
+=== Get Started
+
+[source,bash]
+----
+$ ./src/main/resources/runit.sh

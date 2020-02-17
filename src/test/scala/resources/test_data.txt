@@ -1,0 +1,77 @@
+firnvx.firn.edu - - [27/Jul/1995:11:03:16 -0400] "GET /statistics/1995/bkup/Apr95_full.html   HTTP/1.0" 200 409600
+ip29.detroit2.mi.interramp.com - - [27/Jul/1995:11:14:35 -0400] "GET /shuttle/missions/51-l/mission-51-l.html   HTTP/1.0" 200 6661
+apollo.avid.com - - [27/Jul/1995:11:20:56 -0400] "GET /history/apollo/apollo-13/apollo-13.html  HTTP/1.0" 200 18556
+scsud.ctstateu.edu - - [27/Jul/1995:11:41:55 -0400] "GET /statistics/1995/Jun/Jun95_archive.html   HTTP/1.0" 200 377238
+n1123730.ksc.nasa.gov - - [27/Jul/1995:12:56:54 -0400] "GET /shuttle/missions/sts-69/mission-sts-69.html   HTTP/1.0" 200 10072
+homer07.u.washington.edu - - [27/Jul/1995:13:15:09 -0400] "GET /shuttle/missions/sts-59/news/sts-59-press-kit.txt   HTTP/1.0" 200 64665
+homer07.u.washington.edu - - [27/Jul/1995:13:16:32 -0400] "GET /news/nasa.nasamail.p/604   HTTP/1.0" 200 3497
+homer07.u.washington.edu - - [27/Jul/1995:13:16:59 -0400] "GET /news/sci.space.news/2005   HTTP/1.0" 200 3540
+homer07.u.washington.edu - - [27/Jul/1995:13:17:13 -0400] "GET /shuttle/missions/sts-69/mission-sts-69.html   HTTP/1.0" 200 10072
+n1032036.ksc.nasa.gov - - [27/Jul/1995:13:49:21 -0400] "GET /statistics/1995/bkup/Mar95_full.html   HTTP/1.0" 200 417792
+n1032036.ksc.nasa.gov - - [27/Jul/1995:13:52:31 -0400] "GET /shuttle/technology/sts-newsref/102_operatns.txt   HTTP/1.0" 200 53360
+ix-dfw10-16.ix.netcom.com - - [27/Jul/1995:14:00:55 -0400] "GET /biomed/program.new   HTTP/1.0" 200 31429
+ix-dfw10-16.ix.netcom.com - - [27/Jul/1995:14:02:10 -0400] "GET /news/sci.space.news/1837   HTTP/1.0" 200 71640
+163.205.180.17 - - [27/Jul/1995:14:02:30 -0400] "GET /facts/acronym.txt   HTTP/1.0" 200 57344
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:03:24 -0400] "GET /shuttle/technology/sts-newsref/sts-msfc.html   HTTP/1.0" 200 33360
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:07:08 -0400] "GET /news/sci.space.news/1337   HTTP/1.0" 200 21036
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:10:13 -0400] "GET /shuttle/technology/sts-newsref/20_ov_co.txt   HTTP/1.0" 200 68022
+bigmac.eag.unisysgsg.com - - [27/Jul/1995:14:12:36 -0400] "GET /shuttle/missions/news/1990/h08.03.90   HTTP/1.0" 200 4974
+bigmac.eag.unisysgsg.com - - [27/Jul/1995:14:13:26 -0400] "GET /shuttle/technology/sts-newsref/sts-cron-72.html   HTTP/1.0" 200 160627
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:17:16 -0400] "GET /shuttle/technology/sts-newsref/19_gstdn.txt   HTTP/1.0" 200 26223
+ix-dfw10-16.ix.netcom.com - - [27/Jul/1995:14:17:55 -0400] "GET /facts/internet/bdgtti-1.01.html   HTTP/1.0" 200 229376
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:21:01 -0400] "GET /shuttle/technology/sts-newsref/sts-ovcomm.html   HTTP/1.0" 200 98327
+nyssa.jsc.nasa.gov - - [27/Jul/1995:14:31:42 -0400] "GET /shuttle/technology/sts-newsref/sts-rhc.html   HTTP/1.0" 200 134392
+199.78.228.2 - - [27/Jul/1995:14:50:27 -0400] "GET /statistics/1993/Oct/Oct93_archive.html   HTTP/1.0" 200 33580
+n1032036.ksc.nasa.gov - - [27/Jul/1995:14:59:44 -0400] "GET /shuttle/technology/sts-newsref/operatio.txt   HTTP/1.0" 200 122880
+ad05-043.compuserve.com - - [27/Jul/1995:16:20:14 -0400] "GET /history/apollo/apollo-13/apollo-13 info.html HTTP/1.0" 404 -
+asd07-00.dial.xs4all.nl - - [27/Jul/1995:17:08:04 -0400] "GET / /   HTTP/1.0" 200 7280
+dbrinza.jpl.nasa.gov - - [27/Jul/1995:17:29:10 -0400] "GET /htbin/wais.pl?Wake Shield HTTP/1.0" 200 6858
+dbrinza.jpl.nasa.gov - - [27/Jul/1995:17:39:32 -0400] "GET /news/sci.space.news/archive/sci-space-news-25-jan-1995-86.txt   HTTP/1.0" 200 209356
+d2637a.bcasd.az.honeywell.com - - [27/Jul/1995:20:17:02 -0400] "GET /shuttle/missions/sts-29/sts-29-press-kit.txt   HTTP/1.0" 200 68568
+drjo014a102.embratel.net.br - - [27/Jul/1995:21:59:14 -0400] "GET  //www.umcc.umich.edu HTTP/1.0" 302 -
+acces0.access.ohio.gov - - [27/Jul/1995:23:02:45 -0400] "GET /shuttle/technology/sts-newsref/sts-cron-72.html   HTTP/1.0" 200 160627
+mnssec3.dukepower.com - - [28/Jul/1995:01:32:40 -0400] "GET /software/webadmin/payload.txt   HTTP/1.0" 200 1659
+firnvx.firn.edu - - [28/Jul/1995:03:24:20 -0400] "GET /news/sci.space.news/987   HTTP/1.0" 200 44628
+firnvx.firn.edu - - [28/Jul/1995:03:29:24 -0400] "GET /shuttle/missions/sts-test.txt   HTTP/1.0" 200 171887
+firnvx.firn.edu - - [28/Jul/1995:03:44:49 -0400] "GET /shuttle/missions/sts-missions-flown.txt   HTTP/1.0" 200 270336
+hollywood.cinenet.net - - [28/Jul/1995:04:40:51 -0400] "GET /shuttle/technology/sts-newsref/operations.html   HTTP/1.0" 200 392932
+hollywood.cinenet.net - - [28/Jul/1995:04:53:48 -0400] "GET /shuttle/technology/sts-newsref/operations.html   HTTP/1.0" 200 392932
+hollywood.cinenet.net - - [28/Jul/1995:05:00:03 -0400] "GET /shuttle/technology/sts-newsref/stsover-prep.html   HTTP/1.0" 200 142213
+apocalypse.ksc.nasa.gov - - [28/Jul/1995:08:22:04 -0400] "GET /  HTTP/1.0" 200 7280
+rt99-8.rotterdam.nl.net - - [28/Jul/1995:08:22:17 -0400] "GET / /   HTTP/1.0" 200 7280
+rt99-8.rotterdam.nl.net - - [28/Jul/1995:08:23:32 -0400] "GET / /shuttle/missions/missions.html HTTP/1.0" 200 7280
+edams.ksc.nasa.gov - - [28/Jul/1995:08:43:45 -0400] "GET /facts/faq05.txt   HTTP/1.0" 200 30342
+sn-gastineau.jsc.nasa.gov - - [28/Jul/1995:08:47:22 -0400] "GET /shuttle/missions/sts-69/mission-sts-69.html   HTTP/1.0" 200 10136
+wsd20.brooks.af.mil - - [28/Jul/1995:11:03:17 -0400] "GET /shuttle/resources/orbiters/columbia.html      WWWSAM.BROOKS.AF.MIL/ HTTP/1.0" 200 6922
+dd06-057.compuserve.com - - [28/Jul/1995:13:16:47 -0400] "GET /shuttle/missions/sts-71/sts-71-press-kit.txt   HTTP/1.0" 200 78588
+alyssa.p
+
+131.110.55.100 - - [28/Jul/1995:13:30:23 -0400] "GET /history/history.html HTTP/1.0" 200 1602
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:23 -0400] "GET /elv/TITAN/titan.gif HTTP/1.0" 200 3530
+131.110.55.100 - - [28/Jul/1995:13:30:24 -0400] "GET /history/apollo/images/apollo-small.gif HTTP/1.0" 200 9630
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:25 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:25 -0400] "GET /elv/struct.gif HTTP/1.0" 200 1318
+192.138.199.30 - - [28/Jul/1995:13:30:25 -0400] "GET /elv/DELTA/delta.gif HTTP/1.0" 200 2244
+192.138.199.30 - - [28/Jul/1995:13:30:25 -0400] "GET /elv/ATLAS_CENTAUR/atlas.gif HTTP/1.0" 200 2286
+192.138.199.30 - - [28/Jul/1995:13:30:25 -0400] "GET /elv/TITAN/titan.gif HTTP/1.0" 200 3530
+tornado.umd.edu - - [28/Jul/1995:13:30:26 -0400] "GET /shuttle/technology/images/launch_sites_8-small.gif HTTP/1.0" 200 65536
+131.110.55.100 - - [28/Jul/1995:13:30:26 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
+192.138.199.30 - - [28/Jul/1995:13:30:26 -0400] "GET /elv/struct.gif HTTP/1.0" 200 1318
+131.110.55.100 - - [28/Jul/1995:13:30:27 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:27 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
+lamar.d48.lilly.com - - [28/Jul/1995:13:30:33 -0400] "GET /history/apollo/apollo-spacecraft.txt HTTP/1.0" 200 2261
+131.110.55.100 - - [28/Jul/1995:13:30:33 -0400] "GET /history/apollo/apollo.html HTTP/1.0" 200 3260
+192.138.199.30 - - [28/Jul/1995:13:30:33 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+128.159.77.122 - - [28/Jul/1995:13:30:33 -0400] "GET /facilities/vab.html HTTP/1.0" 200 4045
+128.159.77.122 - - [28/Jul/1995:13:30:34 -0400] "GET /images/vab-small.gif HTTP/1.0" 200 35709
+192.138.199.30 - - [28/Jul/1995:13:30:34 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
+rbisb.gmr.com - - [28/Jul/1995:13:30:36 -0400] "GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0" 200 4101
+193.81.242.40 - - [28/Jul/1995:13:30:37 -0400] "GET /shuttle/technology/images/sts_body_2-small.gif HTTP/1.0" 200 30067
+alyssa.prodigy.com - - [28/Jul/1995:13:30:38 -0400] "GET /shuttle/countdown/ HTTP/1.0" 200 4324
+131.110.55.100 - - [28/Jul/1995:13:30:38 -0400] "GET /history/apollo/images/footprint-small.gif HTTP/1.0" 200 18149
+rbisb.gmr.com - - [28/Jul/1995:13:30:38 -0400] "GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0" 200 4179
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:39 -0400] "GET /elv/uplink.htm HTTP/1.0" 200 1498
+rbisb.gmr.com - - [28/Jul/1995:13:30:41 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+194.166.2.31 - - [28/Jul/1995:13:30:42 -0400] "GET /shuttle/missions/sts-71/images/images.html HTTP/1.0" 200 8529
+tiger2.ocs.lsu.edu - - [28/Jul/1995:13:30:42 -0400] "GET /history/apollo/apollo.html HTTP/1.0" 200 3260
+sysadm.bda.nasa.gov - - [28/Jul/1995:13:30:42 -0400] "GET /elv/elvhead2.gif HTTP/1.0" 200 1733
