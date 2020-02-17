@@ -59,3 +59,11 @@ It is possible for tied ranks but we are asked to find N ranks.
 -----
 By looking at the data (or running a count on a known vistorhost/day) we can see that both visitorhosts visited the same number of times on this day
 but the 9th most accessed url remained '/images/WORLD-logosmall.gif'
+
+=== Issue & Proposed Solutions
+
+There's an issue getting the docker container to work as expected.
+I was able to successfully run it vie a kubernetes implementation but
+I've run out of time as I was debugging.
+Currently I believe the issue is with the workdir used in the Dockerfile.
+
